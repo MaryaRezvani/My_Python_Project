@@ -1,3 +1,10 @@
+"""
+Author: Rezvani,Maryam
+Date Created: 22/04/1403
+Description: Rock, Paper, Scissors Game
+"""
+
+
 import random
 random.choice([1, 2, 3])
 
