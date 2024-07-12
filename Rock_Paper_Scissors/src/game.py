@@ -68,7 +68,6 @@ class Rock_Paper_Scissors():
 
 if __name__ == '__main__':
     game = Rock_Paper_Scissors('maryam')
-    # game.play()
 
     while True:
         game.play()
