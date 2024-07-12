@@ -8,7 +8,7 @@ class Rock_Paper_Scissors():
     #get computer choice
     #Decide winner
     #play
-    def __init__(self, name):
+    def __init__(self, name:str):
         self.choices = ['rock', 'paper', 'scissor']
         self.player_name = name
 
@@ -20,10 +20,21 @@ class Rock_Paper_Scissors():
         print(f'Invalid Choices, you must select from{self.choices}')
         return self.get_player_choice()
     def get_computer_choice(self):
+        """get computer choice randomly from choices: rock, paper, scissors."""
         return random.choice(self.choices)
         
     
-    def decide_winner(self, user_choice, computer_choice):
+    def decide_winner(self, user_choice:str, computer_choice:str):
+        """Decide the winner of the game based on user and computer choices. 
+
+        :param user_choice: the choice of the user.
+        :type user_choice:str
+        :param computer_choice: the choice of the computer.
+        :type computer_choice: str
+        :return: the result of the game(who won?)
+        :rtype: str
+        """
+
         if user_choice == computer_choice:
             return "It's a Tie!"
         win_combination = [('rock','scissor'),('paper', 'rock'), ('scissor', 'papar')]
@@ -36,6 +47,12 @@ class Rock_Paper_Scissors():
 
 
     def play(self):
+        """play the game
+        - get user choice
+        - get computer choice
+        - decide the winner
+        - print the result
+        """
         user_choice = self.get_player_choice()
         computer_choice = self.get_computer_choice()
         print(f'computer choice:{computer_choice}')
