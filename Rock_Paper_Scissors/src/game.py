@@ -3,6 +3,7 @@ random.choice([1, 2, 3])
 
 
 class Rock_Paper_Scissors():
+    """Main class for Rock Paper Scissor Game."""
     #get player choice
     #get computer choice
     #Decide winner
