@@ -4,10 +4,12 @@
 ### Steps to Run the Streamlit App:
 - Save the Code: Save the above code in a file named `app.py`.
 - Install Streamlit: If you haven't installed Streamlit yet, install it using pip:
+
   ```bash
   pip install streamlit
-  ‍‍‍‍```
+  ```
 - Run the App: In your terminal or command prompt, navigate to the directory where `app.py` is saved and run:
+
   ```bash
   streamlit run app.py
   ```
