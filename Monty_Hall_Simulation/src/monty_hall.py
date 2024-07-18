@@ -18,7 +18,7 @@ def monty_hall_game(switch_doors: bool)-> bool:
     door_revealed = random.choice(doors_revealed)
 
     if switch_doors:
-        final_choice = [i for i in range(3) if i != initial_choice and i != door_revealed[0]]
+        final_choice = [i for i in range(3) if i != initial_choice and i != door_revealed][0]
     else:
         final_choice = initial_choice
     return doors[final_choice] == 'car'
@@ -31,7 +31,7 @@ def simulate_game(num_games:int)-> Tuple[float, float]:
     num_wins_without_switching = sum([monty_hall_game(False) for _ in range(num_games)])
     num_wins_with_switching = sum([monty_hall_game(True) for _ in range(num_games)])
 
-    return num_wins_without_switching // num_games, num_wins_with_switching // num_games
+    return num_wins_without_switching, num_wins_with_switching
     
 # win_counter = 0
 # for _ in range(100000):
@@ -41,6 +41,9 @@ def simulate_game(num_games:int)-> Tuple[float, float]:
 if __name__ == '__main__':
     num_games = 1000
     win_percent_without_switching, win_percent_with_switching = simulate_game(num_games)
+
+    time.sleep(0.01)
+     
     
 
 

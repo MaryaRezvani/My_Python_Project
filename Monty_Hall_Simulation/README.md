@@ -19,7 +19,7 @@ The project has the following directory structure:
 ```
 - **src**: This directory contains the Python script (monty_hall.py) for the project.
 
-<img src="./images/streamlit-dashboard.png" width="600">
+<img src="![alt text](image.png)" width="600">
 
 ## Requirements
 - Python 3.7 or higher
