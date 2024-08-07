@@ -20,4 +20,4 @@ python src/main.py
 ```
 ## Improvement:
 - You can create a more beautiful graphic environment and use a list instead of a button to display the clock, etc
-- You can also run this project as an application on your desktop by installing the pypal module and downloading the appropriate icon
+- You can also run this project as an application on your desktop by installing the `pypal` module and downloading the appropriate icon
