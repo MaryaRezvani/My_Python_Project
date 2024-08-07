@@ -3,6 +3,8 @@
 
 This is a simple weather project with Python. which shows how to work with API with `request` and ‍`datetime` module.
 The `tkinter` library is also used for the graphic environment.
+![image](https://github.com/user-attachments/assets/83e862f1-fafa-42de-9007-665623afc459)
+
 
 ## Install
 ```bash
